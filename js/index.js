@@ -17,11 +17,14 @@ function solveQuard(a, b, c) {
     if (discr < 0) {
         return ('no win');
 
-    
+    }
+    if (discr == 0) {
+        const x1 = (-b) / (2 * a);
+    }
+    return 'x = ' + (-b + Math.sqrt(discr)) / (2 * a);
 
 }
 
 function calcD(a, b, c) {
     return b ** 2 - 4 * a * c;
-}
 }

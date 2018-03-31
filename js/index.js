@@ -18,7 +18,7 @@ function solveQuard(a, b, c) {
         return ('no win');
 
     }
-    if (discr == 0) {
+    if (discr === 0) {
         const x1 = (-b) / (2 * a);
     }
     return 'x = ' + (-b + Math.sqrt(discr)) / (2 * a);

@@ -8,21 +8,17 @@ document.write(result);
 function solveQuard(a, b, c) {
     const discr = calcD(a, b, c);
     if (discr > 0) {
-
         const x1 = (-b + Math.sqrt(discr)) / (2 * a);
         const x2 = (-b - Math.sqrt(discr)) / (2 * a);
         return 'x1 = ' + x1 + ', x2 = ' + x2;
-
     }
-    if (discr < 0) {
-        return ('no win');
-
+    else if (discr < 0) {
+    return ('no win');
     }
     if (discr === 0) {
-        const x1 = (-b) / (2 * a);
+    const x1 = (-b) / (2 * a);
     }
     return 'x = ' + (-b + Math.sqrt(discr)) / (2 * a);
-
 }
 
 function calcD(a, b, c) {
